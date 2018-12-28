@@ -202,7 +202,7 @@ resource "aws_instance" "nginx2" {
       "sudo apt-get update",
       "sudo apt-get install nginx -y",
       "sudo service nginx start",
-      "echo '<html><head><title>Blue Team Server</title></head><body style=\"background-color:#1F778D\"><p style=\"text-align: center;\"><span style=\"color:#FFFFFF;\"><span style=\"font-size:28px;\">Blue Team</span></span></p></body></html>' | sudo tee /var/www/html/index.html"
+      "echo '<html><head><title>Green Team Server</title></head><body style=\"background-color:#1F778D\"><p style=\"text-align: center;\"><span style=\"color:#FFFFFF;\"><span style=\"font-size:28px;\">Green Team</span></span></p></body></html>' | sudo tee /var/www/html/index.html"
     ]
   }
 }
